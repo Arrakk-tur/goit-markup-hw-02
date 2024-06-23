@@ -1,0 +1,31 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --slate-cl: 67, 68, 85, 1;
+  --navy-blue-cl: 46, 47, 66, 1;
+  --white-cl: 255, 255, 255, 1;
+}
+
+/* #region Base styles*/
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: rgba(var(--slate-cl));
+  background-color: rgba(--white-cl);
+}
+
+/* #region Common */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
