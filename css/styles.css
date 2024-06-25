@@ -35,6 +35,9 @@ a {
 a:hover {
   color: rgba(var(--ocean-cl));
 }
+a:focus {
+  color: rgba(var(--ocean-cl));
+}
 button {
   font-family: inherit;
   color: currentColor;
@@ -44,31 +47,19 @@ footer {
   background-color: rgba(var(--navy-blue-cl));
 }
 /* #region Common */
-/*
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  overflow: hidden;
-}
-*/
+
 .logo {
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 700;
+  color: rgba(var(--iris-cl));
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: left;
 }
-.logo-accent {
-  color: rgba(var(--iris-cl));
+.logo-dark {
+  color: rgba(var(--navy-blue-cl));
 }
 .logo-white {
   color: rgba(var(--coud-cl));
@@ -127,6 +118,7 @@ footer {
   font-size: 36px;
   line-height: 1.11;
   color: rgba(var(--navy-blue-cl));
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
 }
@@ -137,6 +129,7 @@ footer {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: rgba(var(--navy-blue-cl));
 }
 .team {
