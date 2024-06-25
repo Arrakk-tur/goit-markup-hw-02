@@ -16,8 +16,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: rgba(var(--slate-cl));
-  background-color: rgba(--white-cl);
+  background-color: rgba(var(--white-cl));
 }
 
 ul,
@@ -37,12 +38,13 @@ a:hover {
 button {
   font-family: inherit;
   color: currentColor;
+  cursor: pointer;
 }
 footer {
   background-color: rgba(var(--navy-blue-cl));
 }
 /* #region Common */
-
+/*
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,12 +57,13 @@ footer {
   clip-path: inset(50%);
   overflow: hidden;
 }
-
+*/
 .logo {
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.166666667;
+  text-transform: uppercase;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -73,9 +76,14 @@ footer {
 
 .nav-link {
   font-weight: 500;
+  letter-spacing: 0.02em;
   color: rgba(var(--navy-blue-cl));
 }
 .nav-link:hover {
+  font-weight: 500;
+  color: rgba(var(--ocean-cl));
+}
+.nav-link:focus         {
   font-weight: 500;
   color: rgba(var(--ocean-cl));
 }
@@ -90,15 +98,24 @@ footer {
 .hero-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.071428571;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
   color: rgba(var(--white-cl));
 }
 .hero-btn {
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: rgba(var(--white-cl));
   background-color: rgba(var(--iris-cl));
 }
 .hero-btn:hover {
+  font-weight: 500;
+  color: rgba(var(--white-cl));
+  background-color: rgba(var(--ocean-cl));
+}
+.hero-btn:focus {
   font-weight: 500;
   color: rgba(var(--white-cl));
   background-color: rgba(var(--ocean-cl));
@@ -108,10 +125,10 @@ footer {
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.111111111;
+  line-height: 1.11;
   color: rgba(var(--navy-blue-cl));
-  letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
 /* h3 */
 .portfolio-subtitle,
@@ -120,7 +137,6 @@ footer {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: rgba(var(--navy-blue-cl));
 }
 .team {
